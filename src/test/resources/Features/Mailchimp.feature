@@ -12,7 +12,7 @@ Feature: Mail Chimp test
       Then the "<result>" should be on the screen for "<username>"
       Examples:
         | mailadress |username|password|result|
-        |mail|username|Losenord123!|   Check your email|
+        |mail|newusername|Losenord123!|   Check your email|
         | mail|Longname|Losenord123!|  Enter a value less than 100 characters long|
-        |mail |      Dav88999  |          Losenord123!  |        Another user with this username already exists. Maybe it's your evil twin. Spooky.|
-        |     |    username2    |       Losenord123!     |         Please enter a value|
+        |mail |      Davuserexists  |          Losenord123!  |        Another user with this username already exists. Maybe it's your evil twin. Spooky.|
+        |     |    noemail    |       Losenord123!     |         Please enter a value|
